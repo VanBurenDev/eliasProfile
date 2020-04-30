@@ -1,40 +1,41 @@
-body {
-  min-width: 350px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cormorant+Garamond:wght@300&family=EB+Garamond:wght@500&family=Quicksand:wght@500&family=Ubuntu:wght@500&family=Zilla+Slab&display=swap');
 
 header {
-  background-color: gray;
+  background-color: rgb(94, 143, 172);
+  padding-top: 24px;
+  text-align: center;
 }
 
 footer {
-    background-color: rgb(108, 150, 81);
-    margin: 200px 0 0 0;
-    padding: 20px 0;
+  background-color: rgb(45, 139, 194);
+  text-align: right;
+}
+
+header h1 {
+  font-family: 'Zilla Slab', serif;
+  color:#000;
+}
+
+header h2 {
+  font-family: 'Zilla Slab', serif;
+  color: #000;
 }
 
 h1 {
-  color: white;
-  padding: 50px 0 25px 25px;
-  margin: 0;
-  float: right;
+  font-family: 'Zilla Slab', serif;
 }
 
+ul {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+ol {
+  font-family: 'Ubuntu',sans-serif;
+}
+
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+}
 p {
-  padding-left: 20px;
-}
-
-nav {
-  border: 1px solid #000;
-  padding: 10px;
-  margin: 60px 20px 0 0;
-  width: 50%;
-  float: right;
-  color: #fff;
-}
-
-header:after,
-nav:after {
-  content: " ";
-  display: table;
-  clear: both;
+  font-family: 'Quicksand', sans-serif;
 }
