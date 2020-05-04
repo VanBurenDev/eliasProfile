@@ -1,5 +1,8 @@
+/* Fonts from Google */
+
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cormorant+Garamond:wght@300&family=EB+Garamond:wght@500&family=Quicksand:wght@500&family=Ubuntu:wght@500&family=Zilla+Slab&display=swap');
 
+/* I decided not to use classes to give background color for the header and footer */
 header {
   background-color: rgb(94, 143, 172);
   padding-top: 24px;
@@ -13,18 +16,20 @@ footer {
   padding-top: 24px;
 }
 
+/* I wanted my name and title to have different fonts than the rest of the titles */
 header h1 {
   font-family: 'Zilla Slab', serif;
-  color:#000;
+  color:rgb(35, 60, 199);
 }
 
 header h2 {
   font-family: 'Zilla Slab', serif;
-  color: #000;
+  color: rgb(8, 21, 90);
 }
 
 h1 {
-  font-family: 'Zilla Slab', serif;
+  font-family: 'Coromorant Garamond', serif;
+  color: rgb(8, 21, 90);
 }
 
 ul {
@@ -37,34 +42,70 @@ ol {
 
 h2 {
   font-family: 'Cormorant Garamond', serif;
+  color: rgb(8, 21, 90);
 }
 p {
   font-family: 'Quicksand', sans-serif;
 }
+
+p2 {
+  font-family: 'Ubuntu', sans-serif;
+  margin: auto;
+}
+
 h3 {
   font-family: 'Cormorant Garamond', serif;
 }
+
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 20%;
+  margin-top: 65px;
+  width: 35%;
 }
+
 .center2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 66%;
+  margin-top: 120px;
+  width: 76%;
 }
+
 .center3 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
   width: 20%;
 }
+
 .center4 {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
+}
+
+.wrapper {
+  width: 500px;
+  margin: auto;
+}
+
+.wrapper2 {
+  width: 85%;
+  margin: auto;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
