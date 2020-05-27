@@ -8,25 +8,30 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
+  <header>
+    <h1>Elias Martinez Software Developer</h1>
+    <nav>
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <body>
-  <!-- This is the beginning content of the website -->
-	<header>
-		<h1>Elias Martinez</h1>
-    <h2>Software Developer</h2>
-	</header>
+    <main>
+    <!-- Group #1 with 2 items -->
+    <section class="group" id="home">
+      <div class="item-pic">
+        <img id="home-pic" src="elias-profile-pic.jpg" alt="Jose Elias Martinez">
+      </div>
 
-
-  <main>
-<!-- I wanted my website to look nice so I decided to make two columns, one for the text the other for my face. -->
-    <div class="row">
-      <div class="column1">
-        <div class="wrapper">
+      <div class="item">
         <h2>Home</h2>
-        <p> Hey! I'm Elias Martinez and I'm new to programming Javascript and HTML/CSS. I love learning and look forward to the journey that lay ahead.</p>
-
+        <p> Hey! I'm Elias Martinez and I'm new to programming JavaScript and HTML/CSS. I love learning and look forward to the journey that lay ahead.</p>
         <p> Born in Phoenix, the city's sublime natural splendor and post-modern Southwest culture has remained my humble abode despite more than a few adventures abroad. The likes of which include: </p>
-
         <ul>
           <li>Taipei</li>
           <li>New York City</li>
@@ -34,93 +39,88 @@
           <li>Paris</li>
           <li>Cartagena</li>
         </ul>
-
         <p>I'm focused on developing and learning full stack coding skills. This is because I have a passion for the web and creating virtual spaces the proliferate online activity, and really a sense of community.</p>
-        </div>
+      
       </div>
-      <div class="column1">
-<!-- Here is where I add the image of myself so as to minimize unused space -->
-        <img src="elias-profile-pic.jpg" alt="Jose Elias Martinez" class="center">
+    </section>
+
+
+    <!-- Group #2 with 2 item -->
+    <section class="group" id="about">
+      <div class="item">
+        <img src="image-of-winding-desert-path.jpg" alt="Winding Desert Path">
       </div>
 
-    </div>
-
-    <hr>
-<!-- I plan to use a similar structure to have text next to images -->
-    <div class="row">
-      <div class="column1">
-        <div class="wrapper">
+      <div class="item">
         <h2>About Me</h2>
-
-        <p>I just started learning to code in Javascript and now I'm learning HTML/CSS. I hope to gain sufficient skills to hold the title of full stack software developer.</p>
-
-        <p>The very first website I ever visited was simpsons.com however I didn't quite experience the site because of the nature of dial-up connections and they weren't as stable as they are now. I played Warcraft III, Sims, Black & White, and subsequently dedicated many hours to World of Warcraft. When Youtube was becoming more mainstream I spent a lot of time watching videos. I remember memes like rick roll, philosorapter, forever alone, RayWilliamJohnson was at the apex of =3, all your base belong to us, piano cat - among others. </p>
-
+        <p>The very first website I ever visited was simpsons.com however I didn't quite experience the site because of the nature of dial-up connections. I played Warcraft III, Sims, Black & White, and subsequently dedicated many hours to World of Warcraft. When Youtube was becoming more mainstream I spent a lot of time watching videos. I remember memes like rick roll, philosorapter, forever alone, RayWilliamJohnson was at the apex of =3, all your base belong to us, piano cat - among others. </p>
         <p>I previously completed an undergraduate degree in Aerospace Engineering from Arizona State University.</p>
         <p2><a href="eliasResume.pdf">Elias Martinez's Resume</a></p2>
-        
         <p> If I were to travel anywhere else my top three would be:</p>
         <ol>
           <li>Mexico City</li>
           <li>Manila</li>
           <li>Montenegro</li>
         </ol>
-
         <p> I have over nine years of professional experience. I enjoy reading digital newspapers, science fiction novels, and philosophical inquery. I also keep current with the state of our nation. I have an adult dog so she doesn't need so much attention these days but I do like to walk with her when the weather is ameanable.</p>
-        </div>
+      
       </div>
-      <div class="column1">
-        <img src="image-of-winding-desert-path.jpg" alt="Winding Desert Path" class="center2">
-      </div>
-    </div>
-   <hr> 
+    </section>
 
-<!-- Projects Section -->
-    <div class="row">
-      <div class="column1">
-        <div class="wrapper">
+
+    <!-- Group #3 with 2 item -->
+    <section class="group" id="projects">
+      <div class="item-pic">
+        <img id="home-pic" src="stock-app-pic.png" alt='stock photo of apps'>
+        <img id="home-pic" src="stock-vaccine-pic.png" alt="stock photo of vaccination">
+      </div>
+
+      <div class="item">
         <h2>Projects</h2>
         <h3>Find Vaccines App</h3>
         <p>The purpose of the website is to search to help the citizenry become immunized and prevent any further spread of COVID-19, permanently. The app will be minimal and won’t require user input beyond an initial session of 5 minutes or less.</p> <p>The stacks in use here are ruby, html/css, and javascript.</p>
-
         <p>Repository of files:</p>
         <p2><a href="https://github.com/VanBurenDev/hello-world">Everyone Gets Immunized, GO!</a></p2>
-
+        <p>     </p>
         <p>Get the Android app:</p>
         <p2><a href="https://play.google.com/store/apps/details?id=com.chucklefish.stardewvalley">Find Vaccines</a></p2>
-        </div>
       </div>
+    </section>
 
-      <div class="column1">
-        <img src="stock-vaccine-pic.png" alt="stock photo of vaccination" class="center3"> <img src="stock-app-pic.png" alt='stock photo of apps' class="center4">
+
+    <!-- Group #4 with 1 item -->
+    <section class="group" id="contact">
+      <div class="item">
+        <form action="https://formspree.io/mjvayazk" method="post">
+          <fieldset>
+            <legend> Email Submission Form </legend>
+            <label for="their-name">Name:</label>
+            <input id="their-name" type="text" name="human-name" maxlength="30" required />
+
+            <label for="their-email">Email:</label>
+            <input id="their-email" type="text" name="human-email" maxlength="30" required />
+            
+            <label for="text-body">Body:</label>
+            <textarea id="text-body" name="human-words"></textarea>
+          </fieldset>
+
+          <button type="submit">Send!</button>
+
+        </form>
       </div>
-    </div>
+      <div class="item">
+        <h2>Contact</h2>
+        <p>There are many, many ways to connect in today's internet age. I remember a time when one had to justify even adding an online component to their contact details. The advent of better and smaller processers, and handheld mobile devices, has made it such that some people connect exclusively via apps or the web. Here are three ways to connect with me:</p>
+        <p2><a href="mailto:jemart218@gmail.com">Gmail |</a></p2>
+        <p2><a href="https://www.linkedin.com/in/jose-elias-martinez/"> LinkedIn |</a></p2>
+        <p2><a href="https://github.com/VanBurenDev"> Github</a></p2>
+      </div>
+    </section> 
+    </main>
 
-   <hr>
-<!-- This is the contacts section -->
-
-    <div class="wrapper2">
-    <h2>Contact</h2>
-    <p>There are many, many ways to connect in today's internet age. I remember a time when one had to justify even adding an online component to their contact details. The advent of better and smaller processers, and handheld mobile devices, has made it such that some people connect exclusively via apps or the web. Here are three ways to connect with me:</p>
-
-    <p2><a href="mailto:jemart218@gmail.com">Gmail</a></p2>
-    <p2><a href="https://www.linkedin.com/in/jose-elias-martinez/">LinkedIn</a></p2>
-    <p2><a href="https://github.com/VanBurenDev">Github</a></p2>
-    
-    </div>
-   
-
-  </main>
-
-
-
-
-	<footer>
-    <p>Copyright</p>
-  </footer>
-
-
-
+	  <footer>
+      <p2>© Jose Elias Martinez</p2>
+    </footer>
 
   <script src="script.js"></script>
   </body>
