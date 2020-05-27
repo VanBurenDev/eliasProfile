@@ -2,34 +2,57 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cormorant+Garamond:wght@300&family=EB+Garamond:wght@500&family=Quicksand:wght@500&family=Ubuntu:wght@500&family=Zilla+Slab&display=swap');
 
-/* I decided not to use classes to give background color for the header and footer */
-header {
-  background-color: rgb(94, 143, 172);
-  padding-top: 24px;
-  padding-bottom: 6px;
-  text-align: center;
+header nav {
+  display: flex;
+  justify-content: center;
+  background-color: cornsilk;
 }
 
-footer {
-  background-color: rgb(45, 139, 194);
-  text-align: right;
-  padding-top: 24px;
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
 }
 
-/* I wanted my name and title to have different fonts than the rest of the titles */
-header h1 {
-  font-family: 'Zilla Slab', serif;
-  color:rgb(35, 60, 199);
+header nav ul li {
+  list-style: none;
+  padding: 0 15px 0 15px;
 }
 
-header h2 {
-  font-family: 'Zilla Slab', serif;
+header nav ul li a {
+  font-family: 'Quicksand', sans-serif;
   color: rgb(8, 21, 90);
+  text-decoration: none;
+  font-size: 20px;
 }
 
-h1 {
+main {
+  margin-top: 60px;
+}
+
+header h1 {
+  margin: 0px 0px 20px;
+  text-align: center;
   font-family: 'Coromorant Garamond', serif;
   color: rgb(8, 21, 90);
+  font-size: 55px;
+  background-color: cornflowerblue;
+}
+
+main h2 {
+  margin: 18px 0 12px 0;
+  border-bottom: 1px solid #5c4f41;
+  font-family: 'Cormorant Garamond', serif;
+  color: rgb(8, 21, 90);
+  font-size: 24px;
+}
+
+main h3 {
+  margin: 18px 0 12px 0;
+  font-family: 'Cormorant Garamond', serif;
+  color: rgb(8, 21, 90);
+  font-size: 18px;
 }
 
 ul {
@@ -40,72 +63,130 @@ ol {
   font-family: 'Ubuntu',sans-serif;
 }
 
-h2 {
-  font-family: 'Cormorant Garamond', serif;
-  color: rgb(8, 21, 90);
+main p {
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 0;
 }
-p {
+
+main p2 {
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 0;
+}
+
+.group img {
+  width: 100%;
+  align-content: center;
+}
+
+.bin img {
+  width: 60%;
+  max-height: 180px;
+}
+
+fieldset{
+  padding: 10px 12px;
+	margin: 10px 0 20px 0;
+  border-radius: 6px;
+}
+
+legend {
+  background-color: #000;
+  color: #fff;
+  padding: 3px 6px;
+  border-radius: 6px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}
+
+form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: rgb(40, 59, 153);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+form input[type=text] {
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 5px;
+  width: 100px;
   font-family: 'Quicksand', sans-serif;
 }
 
-p2 {
-  font-family: 'Ubuntu', sans-serif;
+form input[type=text]#their-email {
+  width: 150px;
+}
+
+form textarea {
+  height: 4.75rem;
+  width: 100%;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+form button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 0;
+  font-family: 'Ubuntu',sans-serif;
+  font-size: 16px;
+  background: rgb(46, 43, 43);
+  color: #fff;
+  margin: 0 8px 10px 0;
+}
+
+footer {
+  background-color: cornflowerblue;
+}
+
+/* Groups and Items (mobile first) */
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  background-color: darkgray;
+  padding: 20px;
+}
+
+.item {
+  flex: 1;
   margin: auto;
+  padding: 30px;
 }
 
-h3 {
-  font-family: 'Cormorant Garamond', serif;
+.item-pic {
+  flex: 1;
+  padding: 60px;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 65px;
-  width: 35%;
-}
+@media all and (min-width: 800px) {
+  
 
-.center2 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 120px;
-  width: 76%;
-}
+  .group {
+    flex-direction: row;
+  }
 
-.center3 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  width: 20%;
-}
+  .item {
+    padding-right: 35px;
+  }
 
-.center4 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-}
+  .item-pic {
+    flex: 1;
+    padding: 100px;
+  }
 
-.wrapper {
-  width: 500px;
-  margin: auto;
-}
+  header nav ul {
+    margin-right: 18px;
+  }
 
-.wrapper2 {
-  width: 85%;
-  margin: auto;
-}
+  header nav {
+    margin-top: 8px;
+  }
 
-.column1 {
-  float: left;
-  width: 50%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+  #home-pic {
+    width: 60%;
+  }
 }
