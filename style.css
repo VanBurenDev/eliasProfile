@@ -1,6 +1,12 @@
 /* Fonts from Google */
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cormorant+Garamond:wght@300&family=EB+Garamond:wght@500&family=Quicksand:wght@500&family=Ubuntu:wght@500&family=Zilla+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Montserrat:wght@300;400;600&display=swap');
+
+/*
+font-family: 'Iceland', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
 
 body {
   background-color: #6495ed;
@@ -9,6 +15,7 @@ body {
 header {
   background-color: #6495ed;
 }
+
 header nav {
   display: flex;
   justify-content: center;
@@ -74,29 +81,17 @@ main p {
   margin-top: 0;
 }
 
-main p2 {
-  font-family: 'Ubuntu', sans-serif;
-  margin-top: 0;
-}
-
 .group img {
   width: 100%;
   align-content: center;
 }
 
+
+
 fieldset{
   padding: 10px 12px;
 	margin: 10px 0 20px 0;
   border-radius: 6px;
-}
-
-legend {
-  background-color: #000;
-  color: #fff;
-  padding: 3px 6px;
-  border-radius: 6px;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 16px;
 }
 
 form label {
