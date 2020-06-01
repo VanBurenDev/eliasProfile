@@ -9,11 +9,13 @@ font-family: 'Montserrat', sans-serif;
 */
 
 body {
-  background-color: #6495ed;
+  background-color: #1e88e5;
+  margin: 0;
 }
 
 header {
-  background-color: #6495ed;
+  background-color: #1e88e5;
+  
 }
 
 header nav {
@@ -35,55 +37,55 @@ header nav ul li {
 }
 
 header nav ul li a {
-  font-family: 'Quicksand', sans-serif;
-  color: rgb(8, 21, 90);
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
   text-decoration: none;
   font-size: 18px;
-}
-
-main {
-  margin-top: 60px;
 }
 
 header h1 {
   margin: auto;
   text-align: center;
-  font-family: 'Coromorant Garamond', serif;
-  color: rgb(8, 21, 90);
+  font-family: 'Iceland', cursive;
+  color: #fff;
   font-size: 51px;
 }
 
-main h2 {
+h2 {
   margin: 18px 0 12px 0;
   border-bottom: 1px solid #5c4f41;
-  font-family: 'Cormorant Garamond', serif;
-  color: rgb(8, 21, 90);
+  font-family: 'Iceland', cursive;
+  color: #000;
   font-size: 24px;
 }
 
-main h3 {
+h3 {
   margin: 18px 0 12px 0;
-  font-family: 'Cormorant Garamond', serif;
-  color: rgb(8, 21, 90);
+  font-family: 'Iceland', cursive;
+  color: #000;
   font-size: 18px;
 }
 
 ul {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  list-style-type: square;
+
 }
 
 ol {
-  font-family: 'Ubuntu',sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  list-style-type: lower-alpha;
 }
 
-main p {
-  font-family: 'Quicksand', sans-serif;
+p {
+  font-family: 'Montserrat', sans-serif;
   margin-top: 0;
 }
 
 .group img {
   width: 100%;
   align-content: center;
+  border: 90%;
 }
 
 
@@ -98,8 +100,8 @@ form label {
   display: block;
   font-size: 18px;
   margin-bottom: 5px;
-  color: rgb(40, 59, 153);
-  font-family: 'Ubuntu', sans-serif;
+  color: #1e88e5;
+  font-family: 'Montserrat', sans-serif;
 }
 
 form input[type=text] {
@@ -107,7 +109,7 @@ form input[type=text] {
   font-size: 16px;
   margin-bottom: 5px;
   width: 100px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 form input[type=text]#their-email {
@@ -120,22 +122,22 @@ form textarea {
   color: #000;
   font-size: 16px;
   margin-bottom: 20px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 form button {
   padding: 10px 15px;
   border-radius: 10px;
   border: 0;
-  font-family: 'Ubuntu',sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  background: #000;
+  background: #005cb2;
   color: #fff;
   margin: 0 8px 10px 0;
 }
 
 footer {
-  background-color: #6495ed;
+  background-color: #1e88e5;
 }
 
 /* Groups and Items (mobile first) */
@@ -143,7 +145,7 @@ footer {
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
-  background-color: darkgray;
+  background-color: #afbdc4;
   padding: 20px;
 }
 
@@ -178,7 +180,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
-    background-color: #6495ed;
+    background-color: #1e88e5;
     margin-bottom: 40px;
   }
 
