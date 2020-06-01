@@ -44,7 +44,7 @@ nav ul li a {
 }
 
 h1 {
-  margin: auto;
+  margin: 152px 0 0 0;
   text-align: center;
   font-family: 'Iceland', cursive;
   color: #fff;
@@ -79,6 +79,11 @@ ol {
 p {
   font-family: 'Montserrat', sans-serif;
   margin-top: 0;
+}
+
+header p {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
 }
 
 .group img {
@@ -170,6 +175,10 @@ footer {
   .item {
     padding: 15px;
   }
+
+  header p {
+    margin-top: 15px;
+  }
 }
 
 @media all and (min-width: 800px) {
@@ -215,9 +224,4 @@ footer {
     flex-wrap: wrap;
     padding-bottom: 0;
   }
-  /*
-  #home-pic {
-    width: 60%;
-  }
-  */
 }
